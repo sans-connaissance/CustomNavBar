@@ -12,6 +12,7 @@
 		410E2F1E27B190D4004A0FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410E2F1D27B190D4004A0FA1 /* Assets.xcassets */; };
 		410E2F2127B190D4004A0FA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410E2F2027B190D4004A0FA1 /* Preview Assets.xcassets */; };
 		410E2F2927B19587004A0FA1 /* AppNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410E2F2827B19587004A0FA1 /* AppNavBarView.swift */; };
+		410E2F2B27B1978B004A0FA1 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410E2F2A27B1978B004A0FA1 /* CustomNavBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		410E2F1D27B190D4004A0FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		410E2F2027B190D4004A0FA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		410E2F2827B19587004A0FA1 /* AppNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBarView.swift; sourceTree = "<group>"; };
+		410E2F2A27B1978B004A0FA1 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				410E2F2827B19587004A0FA1 /* AppNavBarView.swift */,
+				410E2F2A27B1978B004A0FA1 /* CustomNavBarView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				410E2F1C27B190D3004A0FA1 /* ContentView.swift in Sources */,
+				410E2F2B27B1978B004A0FA1 /* CustomNavBarView.swift in Sources */,
 				410E2F1A27B190D3004A0FA1 /* CustomNavBarApp.swift in Sources */,
 				410E2F2927B19587004A0FA1 /* AppNavBarView.swift in Sources */,
 			);
