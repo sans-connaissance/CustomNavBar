@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CustomNavBarView: View {
     
-    @State private var showBackButton: Bool = true
-    @State private var title: String = "David Malicke"
-    @State private var subtitle: String? = "Education"
+    @Environment(\.presentationMode) var presentationMode
+    let showBackButton: Bool
+    let title: String
+    let subtitle: String?
     
     var body: some View {
         //THIS HSTACK AND ITS BACKGROUND COLOR CONTROL COLOR AND SIZE
@@ -31,7 +32,7 @@ struct CustomNavBarView: View {
         .foregroundColor(.white)
         .font(.headline)
         //CHANGE COLOR OF BACKGROUND
-        .background(Color.gray.ignoresSafeArea(edges:.top)).opacity(0.75)
+        .background(Color.blue.ignoresSafeArea(edges:.top)).opacity(0.75)
         // .background(Color.red.ignoresSafeArea(edges: .top))
     }
 }
@@ -39,7 +40,7 @@ struct CustomNavBarView: View {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            CustomNavBarView()
+            CustomNavBarView(showBackButton: true, title: "Title Here", subtitle: "Subtitle goes here")
             Spacer()
         }
     }
@@ -50,7 +51,7 @@ extension CustomNavBarView {
     
     private var backButton: some View {
         Button {
-            
+            presentationMode.wrappedValue.dismiss()
         } label: {
             Image(systemName: "chevron.left")
         }
