@@ -9,6 +9,29 @@ import SwiftUI
 
 struct AppNavBarView: View {
     var body: some View {
+        
+        CustomNavView {
+            ZStack {
+                Color.orange.ignoresSafeArea()
+                
+                NavigationLink {
+                    Text("Destination")
+                } label: {
+                    Text("Navigate")
+                }
+            }
+        }
+    }
+}
+
+struct AppNavBarView_Previews: PreviewProvider {
+    static var previews: some View {
+        AppNavBarView()
+    }
+}
+
+extension AppNavBarView {
+    private var defaultNavView: some View {
         NavigationView {
             ZStack {
                 Color.mint.ignoresSafeArea()
@@ -23,11 +46,5 @@ struct AppNavBarView: View {
             }
             .navigationTitle("Nav Title Here")
         }
-    }
-}
-
-struct AppNavBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppNavBarView()
     }
 }

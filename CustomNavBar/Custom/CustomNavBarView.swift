@@ -30,7 +30,9 @@ struct CustomNavBarView: View {
         .accentColor(.white)
         .foregroundColor(.white)
         .font(.headline)
-        .background(Color.blue.ignoresSafeArea(edges: .top))
+        //CHANGE COLOR OF BACKGROUND
+        .background(Color.gray.ignoresSafeArea(edges:.top)).opacity(0.75)
+        // .background(Color.red.ignoresSafeArea(edges: .top))
     }
 }
 
